@@ -1,0 +1,113 @@
+{
+  //URL to display in ModList GUI when an update is avalible
+  "homepage": "http://www.curse.com/mc-mods/minecraft/222028-yarr-cute-mob-models-remake",
+  "promos": {
+    "1.12.0-latest"     : "14.21.1.2387",
+    "1.12.0-recomended" : "14.21.1.2387"
+  },
+    // The changelog will be a ordered list of all entries in this this whos key is >= CURRENT_VERSION && <= TARGET version
+  "1.12.0" : 
+  {
+    "1.0.16" : "-zombie villager graphics can now be disabled separately. they're no longer bound to regular zombies.\n"
+  },
+
+  "1.11.2" : 
+  {
+    "1.0.16" : "-zombie villager graphics can now be disabled separately. they're no longer bound to regular zombies.\n",
+    "1.0.15" : "-fixed cute zombie villagers spamming the log with errors.\n"
+  },
+
+  "1.11.0" : 
+  {
+    "1.0.14" : "-fixed cute villagers not spawning from an egg when separate entities is active.\n"
+  },
+
+  "1.10.2" : 
+  {
+    "1.0.14" : "-fixed cute villagers not spawning from an egg when separate entities is active.\n",
+    "1.0.13" : "-added stray skeleton, husk zombie and zombie villager variations.\n"
+  },
+  "1.9.4" : 
+  {
+    // The changelog will be a ordered list of all entries in this this whos key is >= CURRENT_VERSION && <= TARGET version
+
+    "1.0.12" : "-as of minecraft 1.9, mob's internal name is now used in spawn eggs instead of mob ids, so id entry in the config was removed.\n
+-added an option to separate the mobs into regular mc mobs and cute mobs. the cute ones will behave exactly like originals, but this way they can both exist. unfortunately mobtalker won't work on them until the mod's updated to the point it can be used on custom mobs, and even then they may require special story scripts.\n
+-added an option to use more blocky, steve-like models for the mobs instead of the more detailed ones.\n
+-fixed a crash if the mod was put on a server.\n
+-default mob id was changed to 12032. 300 was too close to default ones, in case mojang ever expanded the id values it'd get in the way.\n
+-the spawn eggs for iron and snow golems are now disabled by default, activate through config. this is to prevent conflicts if any other mod were to do the same.\n"
+  },
+  "1.9.0" : 
+  {
+    // The changelog will be a ordered list of all entries in this this whos key is >= CURRENT_VERSION && <= TARGET version
+
+    "1.0.12" : "-as of minecraft 1.9, mob's internal name is now used in spawn eggs instead of mob ids, so id entry in the config was removed.\n
+-added an option to separate the mobs into regular mc mobs and cute mobs. the cute ones will behave exactly like originals, but this way they can both exist. unfortunately mobtalker won't work on them until the mod's updated to the point it can be used on custom mobs, and even then they may require special story scripts.\n
+-added an option to use more blocky, steve-like models for the mobs instead of the more detailed ones.\n
+-fixed a crash if the mod was put on a server.\n
+-default mob id was changed to 12032. 300 was too close to default ones, in case mojang ever expanded the id values it'd get in the way.\n
+-the spawn eggs for iron and snow golems are now disabled by default, activate through config. this is to prevent conflicts if any other mod were to do the same.\n",
+    "1.0.11" : "-name change and some clarification to avoid confusion with the older mod and its author. i should've done that from the start.\n
+-some internal file changes to adapt the mod to the change.\n
+-fixed up mcp mappings to use the most recent version.\n",
+    "1.0.10" : "-removed hitbox scaling for now. i need something better than overwriting original mobs for that. it's more prone to crashing with it on and less compatible with other mods anyway.\n
+-added model upscaling option for wither skeletons.\n
+-silverfish's model scaling option adjusted, it was too large and still going out of its hitbox.\n
+-added glowing eyes effect to enderman's hat and both spiders' hair ornaments.\n
+-witch model can now show what she's holding in her hand.\n
+-ghast sister's a bit more active now. she will hunt down all animals, passive mobs and tamed mobs like wolves. still ignores players unless attacked.\n
+-made and added guardian and guardian elder models.\n
+-note, until i can change the hitbox and eye level through renderer or other way that doesn't involve overwriting or modifying the original mob code, they will stare above instead of at their target and will fire their beams from their knees (or stomach for elder).",
+    "1.0.09" : "-fixed villagers. now if a new, unknown profession is added, it'll retain the original, unchanged model. only vanilla villagers get the new models.\n
+-fixed a bug in spider's minecart riding animation, the secondary pieces of its arms now follow the main ones instead of appearing behind.\n
+-fixed a bug with silverfish's skirt, it didn't rotate along with the legs when it was stuck in a minecart, it would look weird.\n
+-fixed ghast sister's minecart riding animation, neither arms nor skirt were affected. added a slight sway to her skirt so it follows her legs rather than be static.\n
+-fixed witch and villager's skirts not following the legs when sitting in minecart. fixed witch's sleeves not following her arms while sitting.\n
+-fixed zombie villager's skirt not following the legs and left sleeve not following the arm if sitting in minecarts.\n
+-fixed wolf's problem with sitting in minecarts.\n
+-fixed some problems with skeleton sometimes ignoring the aimed bow setting, and in some cases wither skeleton doing the aimed pose without holding a bow.\n
+-removed some unneeded textures.\n",
+    "1.0.08" : "-mooshroom, spider and cave spider now have the accurate model size option.\n
+-accurate model size and accurate hitbox can now work together to give more combinations.\n
+-another change to the config. now it's possible to set everything from in-game, using forge's built in gui config on title screen, in mod section.\n
+-switched the mass-disable special option into mass-enable, disabled by default. that way only graphics will be replaced, improving compatibility with other mods that also change/rely on vanilla mobs. enabling it will allow stuff like hitbox changes or no smoke for blaze at the expense of compatibility. in the future once mobtalker implements other mobs, this will probably interfere with them, so it's off by default.\n
+-added option for enderman to adjust its hitbox to the model, or model to hitbox so they can either get small hitboxes, or get really tall as the original enderman.\n
+-fixed a crash if installed on a server with the special options (hitbox size etc) enabled.\n",
+    "1.0.07" : "-made and added a mooshroom model.\n
+-redid the config a bit to make it more organized.\n",
+    "1.0.06" : "-fixed the problem of new cmm entity not copying the nbt data of its original. this fixes the slimes and magma cubes infinite cloning, as well as potential problems like this in the future. it should preserve the original mob's data like persistencerequired, invincibility and such.\n
+-mobs affected: blaze, spider, cave spider, ghast, iron golem, silverfish, slime, magma cube. everything else is only replaced graphically due to no need of changing their code.\n
+-the disableOptions option will disable this behavior, making all mobs be just replaced graphically. no hitbox will change, blaze will always have a lot of smoke, but in case you uninstall the mod, all mobs will revert back to original vanilla version instead of being deleted.\n
+-added support for dynious's version checker. all future updates will notify you of updates through version checker's gui.\n",
+    "1.0.05" : "-temporarily disabled the scalable hitbox for slimes, since it caused them to forget their size variable, until i figure out how to inherit that value from the mob it replaces. they will be only replaced graphically.\n",
+    "1.0.04" : "-fixed server side not replacing some mobs.\n
+-changed the cave spider a bit, so it should be a bit less prone to bug out now. only blaze's still in the "danger zone" for that, since unlike other mobs i couldn't remove or override the class that spawns smoke particles.\n",
+    "1.0.03" : "-changed the method mobs are replaced to a pure forge one due to complete modloader code removal, so it might not be compatible with previous version.\n",
+    "1.0.02" : "-added tinker's construct villager skin variation to fix the broken skin.\n",
+    "1.0.01" : "-updated all of my models a bit. not really noticable, mostly texture fixes and an additional neck block to fix the hole in shoulders.\n
+-made and added a wolf model.\n
+-replaced creeper model with mine. old creeper model removed.\n
+-replaced skeleton model with mine. wither skeleton included. old skeleton models removed.\n
+-replaced ghast model with mine. old ghast model removed.\n
+-replaced blaze model with mine. old blaze model removed.\n
+-replaced enderman model with mine. old enderman models removed.\n
+-replaced spider model with mine. old spider models removed.\n
+-replaced ghast sister/ghasts model with mine. old model removed.\n
+-removed all leftover _jx content, like old design models.\n
+-this covers all of _jx's models, now all of the content in the mod is made by me.\n
+-mobs won't use their jumping animation while floating in water anymore.\n",
+    "1.0.00" : "-recoded to forge. ported the models over to forge. no more modloader requirement, also bigger compatibility with future versions of minecraft.\n
+-ghasts mob now uses mod id method to avoid id conflicts.\n
+-applied scaling to the child versions of zombie and pig zombie.\n
+-made and added a cave spider model.\n
+-made and added a silverfish model.\n
+-made and added a witch model.\n
+-made and added an iron golem model.\n
+-made and added a slime model with all 3 variations.\n
+-made and added a magma cube model with all 3 variations.\n
+-made and added a villager model.\n
+-made and added a new zombie model. old one moved to alternate mode. zombie villager type included. alternate got a palette swap for zombie villager mode too.\n
+-made and added a new pig zombie model. old one moved to alternate mode.\n"
+  }
+}

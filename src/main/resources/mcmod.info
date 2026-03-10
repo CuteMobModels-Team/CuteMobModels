@@ -1,0 +1,17 @@
+[
+{
+  "modid": "yarrmateys_cutemobmodels",
+  "name": "Yarr Cute Mob Models - Remake",
+  "description": "Replaces the vanilla mobs with designs used in MobTalker by AT2. Remake of the abandoned japanese mod, with all new stuff by me. Note, this is a different mod than the original. Send all questions and reports about this mod to its curseforge page, don't bother original CMM author with them.",
+  "mcversion": "1.12.0",
+  "version" : "1.0.16",
+  "url": "http://www.curse.com/mc-mods/minecraft/222028-yarr-cute-mob-models-remake",
+  "updateUrl": "",
+  "authorList": [ "yarrmateys" ],
+  "credits": "original mod by _jx, old updates to original mod by SCMowns",
+  "logoFile": "assets/yarrmateys_cutemobmodels/logo.png",
+  "screenshots": [ ],
+  "parent":"",
+  "dependencies": [ ]
+}
+]
